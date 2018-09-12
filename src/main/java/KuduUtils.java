@@ -11,7 +11,7 @@ public class KuduUtils {
     private static final Double DEFAULT_DOUBLE = 12.345;
 
     public static void main(String[] args) throws InterruptedException, KuduException {
-        KuduClient client = new KuduClient.KuduClientBuilder("10.253.1.2:8051").build();
+        KuduClient client = new KuduClient.KuduClientBuilder("******").build();
 
         List<ColumnSchema> columns = new ArrayList<ColumnSchema>(2);
         columns.add(new ColumnSchema.ColumnSchemaBuilder("key1", Type.STRING)
